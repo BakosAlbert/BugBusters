@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BugBusters - Kapcsolat</title>
+    <link rel="stylesheet" href="../css/Contact.css">
+    <link rel="icon" href="../imgs/logoIcon.png" type="image/png" sizes="64x64">
+
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../imgs/logoPic.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+
+                <li><a href="../htmls/Statistics.html">Statisztikák</a></li>
+
+                <li><a href="../index.html">Főoldal</a></li>   
+
+                <li class="Active"><a href="../htmls/Contact.html">Kapcsolat</a></li>
+
+            </ul>
+        </nav>
+        <div class="login">
+            <a href="../htmls/Userprofile.html"><img src="../imgs/LoginIcon.png" alt="Login"></a>
+        </div>
+    </header>
+    <div class="FAQContainer">
+        <h2>Gyakran Ismételt kérdések - GyIK</h2>
+        <div class="Questions">
+            <details>
+                <summary>Hogyan lehet hibát bejelenteni?</summary>
+                <p>A hibabejelentést a regisztrációt követően lehet tenni a <span>Hibabejelentes</span> menüpontra kattintva..</p>
+            </details>
+        </div>
+
+        <div class="Questions">
+            <details>
+                <summary>Mi az előnye az alkalmazás<br> használatának?</summary>
+
+                <p><span>Egyszerűbb, gyorsabb</span>, illetve itt van lehetsőged <span>javítani hibákat</span> amiket a felhasználók jeleztek.</p>
+            </details>
+        </div>
+
+        <div class="Questions">
+            <details>
+                <summary>Mit tegyek ha hibába ütközök az oldalon vagy az alkalmazás használata közben?</summary>
+
+                <p><span>Írj közvetlen e-mailt</span> az üzemeltetőknek, akik javítani fogják az altálad írt hibákat!</p>
+            </details>
+        </div>
+
+        
+        <div class="Questions">
+            <details>
+                <summary>Mennyi idő alatt válaszolnak az üzemeltetők a kérdésemre?</summary>
+
+                <p>Az köveztlen üzentekre <span>48 órán belül</span> válaszolunk.</p>
+            </details>
+        </div>
+
+
+        <div class="Questions">
+            <details>
+                <summary>Biztonságban vannak az adataim?</summary>
+
+                <p><span>Igen, az adatvédelem kiemelten fontos számunkra.</span> A legmodernebb technikákkal védjük a felhasználók adatait!</p>
+            </details>
+        </div>
+
+        <div class="Questions">
+            <details>
+                <summary>Milyen böngészővel működik az oldal?</summary>
+
+                <p>Az oldal kompatibilis minden <span>Chromium-alapú böngészővel</span>, például a Google Chrome, Microsoft Edge, Opera és Brave legújabb verzóival.</p>
+            </details>
+        </div>
+    </div>
+    <br>
+    <div class="ContactContainer">
+        <h2>Mondd el a problémád! - Küldj nekünk üzenetet!</h2>
+        <form class="FormContainer">
+            <div class="Personalinfos">
+                <fieldset>
+                    <legend>Személyes adatok</legend>
+
+                    <input class="Name" type="text" placeholder="Név (Vezetéknév Keresztnév) (Opcionális)"> 
+                    <br>
+                    <input class="UserName" type="text" placeholder="Felhasználói neved (Kötelező)" required> 
+                    <br>
+                    <input class="UserMail" type="email" placeholder="E-mail (valaki@valami.com) (Kötelező)" required> 
+                </fieldset>
+            </div>
+            <div class="Message">
+                <fieldset>
+                    <legend>Nekünk szánt üzenet</legend>
+                    <input class="Subject" type="text" required placeholder="Tárgy">
+                    <textarea class="E-mail" placeholder="Írd ide az üzeneted. . . (Max 1.000 karakter)" rows="6" maxlength="1000" required></textarea>
+                </fieldset>
+            </div>
+            <div class="Submit">
+                <input type="submit" value="Küldés">
+            </div>
+        </form>       
+    </div>
+
+</body>
+</html>

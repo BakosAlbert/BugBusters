@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BugBusters - Új hiba jelentése</title>
+    <link rel="icon" href="../imgs/logoIcon.png" type="image/png" sizes="64x64">
+    <link rel="stylesheet" href="../css/NewBugReport.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="PictureAndMenu">
+        <a href="../index.html"><img class="BackButtonimg" src="../imgs/backbutton.png" alt="Back_button"></a>
+        <div class="PictureAndName">
+            <img class="ProfilePicture" src="../imgs/LoginIcon.png" alt="Default_Profile_Picture">
+            <h2>GamerHun</h2>
+            <h3 class="UserTag">The UI/UX Therapist</h3>
+            <div class="Rating">
+                <span class="star full">&#9733;</span> 
+                <span class="star full">&#9733;</span> 
+                <span class="star full">&#9733;</span> 
+                <span class="star full">&#9733;</span>   
+                <span class="star half">&#9733;</span>
+                <p>(8264 értékelés)</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../htmls/Userprofile.html" >Profil</a></li>
+                <li class="Active"><a href="../htmls/NewBugReport.html">Új hiba jelentése</a></li>
+                <li><a href="../htmls/MyReports.html">Jelentéseim</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="BugReport">
+        <h1>Új hiba bejelentése</h1>
+        <div class="ReportContainer">
+            <h2>Találtál egy hibát? - Jelentsd be!</h2>
+            <form class="FormContainer">
+                <div class="BugInfos">
+                    <fieldset>
+                        <legend>Adj meg információkat a hibáról</legend>
+                        <input class="Subject" type="text" required placeholder="Add meg bejelentés nevét">
+                        <input class="AppName" type="text" placeholder="Fájl/Program/Alkalmazás név" required>
+                        <br>
+                        <input class="DevName" type="text" placeholder="Fejlesztő/Fejlesztő cég neve" required>
+                        <br>
+                        <select class="ErrorType" name="Hiba típusa" required>
+                            <option value="" disabled selected>Válassz...</option>
+
+                            <option value="functionalbug">Funkcionalitási hiba</option>
+
+                            <option value="performancebug">Teljesítménybeli gondok</option>
+
+                            <option value="logicalbug">Logikai hiba</option>
+
+                            <option value="ux-bug">Felhasználói élmény (UX) hiba</option>
+
+                            <option value="ui-bug">Megjelenési (UI) hiba</option>
+                            
+                            <option value="datausebug">Adatkezelési problémák</option>
+
+                            <option value="netbugs">Hálózati hibák</option>
+
+                            <option value="compatibility">Kompatibilitási gondok</option>
+
+                            <option value="integrationbug">Integrációs problémák</option>
+
+                            <option value="automatbug">Automatizálási hibák</option>
+
+                            <option value="workingbug">Karbantarthatósági problémák</option>
+
+                            <option value="secbugs">Biztonsági problémák</option>
+
+                            <option value="datasecbug">Adatvédelmi hibák</option>
+
+                            <option value="document">Verziókezelési gondok</option>
+
+                            <option value="versionbugs">Dokumentációs hiányosságok</option>
+
+                            <option value="other">Egyéb</option>
+                        </select>
+                        <br>        
+                    </fieldset>
+                    <fieldset>
+                        <legend>Add meg a hiba súlyosságát</legend>
+                        <p>Mennyire ítéled súlyosnak a hibát? - Válaszd ki a négy lehetőség közül az egyiket!</p>
+                        <div class="SeverityButtonContainer">
+                            <label>
+
+                                <input class="SeverityButtons" type="radio" name="severity" value="mild" required>
+                                <span class="custom-radio mild"></span>
+                                Enyhe
+                            </label>
+                            
+                            <label>
+                                <input class="SeverityButtons" type="radio" name="severity" value="moderate" required>
+                                <span class="custom-radio moderate"></span>
+                                Közepes
+                            </label>
+
+                            <label>
+                                <input class="SeverityButtons" type="radio" name="severity" value="severe" required>
+                                <span class="custom-radio severe"></span>
+                                Súlyos
+                            </label>
+
+                            <label>
+                                <input class="SeverityButtons" type="radio" name="severity" value="critical" required>
+                                <span class="custom-radio critical"></span>
+                                Kritikus
+                            </label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="BugDescription">
+                    <fieldset>
+                        <legend>Adj meg több részletet a fejlesztőknek</legend>
+                        <textarea class="Description" required placeholder="Itt fejtheted ki részletesebben a tapsztaltakat... (Max 1.000 karakter)"></textarea>
+                    </fieldset>
+                </div>
+                <div class="Submit">
+                    <input type="submit" value="Bejelentés">
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

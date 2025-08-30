@@ -1,0 +1,530 @@
+
+body{
+    height: auto;
+    margin: 0;
+
+    background-image: url("../imgs/BackgroundPic.png");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    font-family:'Work Sans', 'Segoe UI', 'Lucida Grande', 'sans-serif';
+    font-weight: bold;
+    
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 20px;
+    margin: 20px auto;
+
+    max-width: 1200px;
+    width: 90%;
+
+    background-color: rgba(104, 164, 172, 0.568);
+    border-radius: 20px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+.logo{
+    img{
+        display: flex;
+        flex-wrap: wrap;
+
+        margin-left: 20px;
+        margin-top: 5px;
+
+        max-width: 85%;
+        height: 50px;
+    }
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        list-style: none;
+
+        margin: 0;
+        padding: 0;
+       
+        gap:100px;
+    }
+    li{
+        flex:1;
+
+        padding: 10px 15px;
+        margin-left: 20px;
+        margin-right: 20px;
+
+        text-align: center;
+
+        color:black;
+        
+        
+        border-radius: 10px;
+
+        background-color: rgba(104, 164, 172, 0.712);
+
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+
+        transition: 0.3s ease;
+        a{
+            text-decoration: none;
+            font-size: 16px;
+            text-transform: uppercase;
+
+            color:black;
+            
+        }
+    }
+    li.Active{
+        transform: scale(1.1);
+
+        border: 2px solid rgba(60, 94, 99, 0.568);
+
+        background-color: rgba(87, 138, 145, 0.712);
+        
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+    
+}
+li:hover{
+    transform: scale(1.05);
+}
+.login{
+    transition: 0.3s ease;
+
+    img{
+        display: flex;
+        flex-wrap: wrap;
+
+        margin-right: 20px;
+        margin-top: 5px;
+
+        height: 50px;
+
+        border-radius: 30px;
+
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    }
+    a{
+        text-decoration: none;
+    }
+}
+.login:hover{
+    transform: scale(1.05);
+}
+
+
+
+
+
+.FAQContainer{
+    display: flex;
+    flex-direction: column;
+
+    margin: 40px auto;
+    padding-left: 40px;
+    padding-bottom: 30px;
+
+    width: 80%;
+    height: auto;
+
+    border-radius: 20px;
+    
+    background-color:rgba(104, 164, 172, 0.568); 
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+
+    h2{
+        font-family: 'Montserrat', 'Arial', 'Helvetica',sans-serif;
+
+        text-transform: uppercase;
+
+        font-size: 2em;
+
+        font-weight: bold;
+
+        color:black;
+    }
+     
+}
+.Questions{
+    margin-top:30px;
+    padding-left: 46.5px;
+
+    width: 65%;
+
+    border-radius: 10px;
+
+    background-color:rgba(104, 164, 172, 0.712);
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    transition: 0.3s ease;
+}
+
+details{
+    cursor: pointer;
+    summary{
+        font-family: 'Montserrat', 'Arial', 'Helvetica',sans-serif;
+
+        text-transform: uppercase;
+
+        font-size: 1.45em;
+    
+        list-style-position: outside;
+    }
+    p{
+        
+        margin-bottom:5px;
+        padding-left: 4.5px;
+
+        font-family:'Lato','Verdena', 'Tahtoma',sans-serif;
+
+        font-size: 1.15em;
+
+        font-weight: lighter;
+
+        color:black;
+        
+        span{
+            font-weight: bolder;
+            color:black;
+        }
+    }
+}
+
+
+
+.ContactContainer{
+    display: flex;
+    flex-direction: column;
+
+    margin: 40px auto;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+
+    width: 80%;
+    height: auto;
+
+    border-radius: 20px;
+    background-color:rgba(104, 164, 172, 0.568);
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+
+
+    h2{
+        font-family: 'Montserrat', 'Arial','Helvetica',sans-serif;
+
+        text-transform: uppercase;
+
+        font-size: 2em;
+
+        font-weight: bold;
+
+        color:black;
+    }
+    .FormContainer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap:20px;
+    }
+    .Personalinfos, .Message{
+        flex:1;
+        margin-top: 15px;
+        padding-top: 20px;
+
+        height: auto;
+
+        border-radius: 10px;
+
+        background-color: rgba(104, 164, 172, 0.712);
+        
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        
+        fieldset{
+            border: none;
+        }
+        legend{
+            padding-bottom:15px;
+
+            font-family: 'Montserrat', 'Arial', 'Helvetica', sans-serif;
+
+            text-transform: uppercase;
+
+            font-size: 1.25em;
+        }
+    }
+    
+}
+
+.Personalinfos {
+    padding-right: 20px;
+    padding-left: 20px;
+
+    .Name{
+        padding: 10px;
+        margin-bottom: 20px;
+
+        height: 20px;
+        width: 75%;
+
+        outline: none;
+
+        border: 2px solid rgba(104, 164, 172, 0.568);
+        border-radius: 5px;
+
+        font-family: 'Lato', 'Verdana', 'Tahoma', sans-serif;
+        font-size: 1rem;
+        color: rgba(255, 255, 255, 0.856); 
+
+        background-color: rgba(79, 127, 134, 0.603);
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.8);
+
+        transition:  0.3s ease;
+    }
+
+    .Name::placeholder{
+        font-family: 'Lato', 'Verdana', 'Tahoma', sans-serif;
+
+        text-transform: uppercase;
+
+        font-size: 0.9rem;
+
+        color: rgba(255, 255, 255, 0.589);
+    }
+    .Name:focus{
+        border-color: #3f676d;
+        box-shadow: 0 0 8px rgba(104, 164, 172, 0.7); 
+    }
+    .UserName{
+        padding: 10px;
+        margin-bottom: 20px;
+
+        height: 20px;
+        width: 75%;
+
+        outline: none;
+
+        border: 2px solid rgba(104, 164, 172, 0.568);
+        border-radius: 5px;
+        
+        font-family: 'Lato', 'Verdana', 'Tahoma', sans-serif;
+        font-size: 1rem;
+        color: rgba(255, 255, 255, 0.856);  
+
+        background-color: rgba(79, 127, 134, 0.603);
+    
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.8);
+
+        transition: 0.3s ease;
+    }
+    .UserName::placeholder{
+        font-family: 'Lato', 'Verdana', 'Tahoma', sans-serif;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.589);
+    }
+    .UserName:focus{
+        border-color: #3f676d;
+
+        box-shadow: 0 0 8px rgba(104, 164, 172, 0.7);
+    }
+    .UserMail{
+        padding: 10px;
+        margin-bottom: 20px;
+
+        height: 20px;
+        width: 75%;
+
+        outline: none;
+
+        border: 2px solid rgba(104, 164, 172, 0.568);
+        border-radius: 5px;
+       
+
+        font-family: 'Lato', 'Verdana', 'Tahoma', sans-serif;
+        font-size: 1rem;
+        color: rgba(255, 255, 255, 0.856);  
+
+        background-color: rgba(79, 127, 134, 0.603);
+
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.8);
+
+        transition: 0.3s ease;
+    }
+    .UserMail::placeholder{
+        font-family: 'Lato', 'Verdana', 'Tahoma', sans-serif;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.589);
+    }
+    .UserMail:focus{
+        border-color: #3f676d;
+        box-shadow: 0 0 8px rgba(104, 164, 172, 0.7);
+    }
+    
+
+}
+
+.Message{
+    padding-right: 20px;
+    padding-left: 20px;
+
+    .E-mail{
+        
+        margin-top:20px;
+        padding: 10px;
+
+        width: 100%;
+        height: 200px;
+
+        resize: none;
+        outline:none;
+
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        border-radius: 5px;
+        border: 2px solid rgba(104, 164, 172, 0.568);
+
+        font-family: 'Lato', 'Verdana', 'Tahoma', sans-serif;
+        font-size: 1.05em;
+        color:rgba(255, 255, 255, 0.856);
+
+        background-color: rgba(92, 147, 155, 0.603);
+    
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.8);
+        
+        transition: 0.3s ease;
+    }
+
+    /*Text area fókusz / görgő beállítások*/
+    .E-mail::placeholder{
+        color: rgba(255, 255, 255, 0.589);
+        font-size: 0.9rem;
+        font-family: 'Lato', 'Verdana', 'Tahoma', sans-serif;
+        text-transform: uppercase;
+    }
+
+    .E-mail:focus {
+        border-color: #3f676d;
+
+        box-shadow: 0 0 8px rgba(104, 164, 172, 0.7); 
+    }
+
+    .E-mail::-webkit-scrollbar{
+        width: 8px;
+
+        pointer-events: visible;
+
+        cursor: pointer;
+    }
+
+    .E-mail::-webkit-scrollbar-thumb {
+        /* Görgő */
+        cursor: pointer;
+
+        border-radius: 5px; 
+
+        background-color: rgba(255, 255, 255, 0.5); 
+    }
+
+    .E-mail::-webkit-scrollbar-track {
+        /* Görgősáv */
+        border-radius: 10px;
+        
+        background-color: rgba(92, 187, 163, 0.692);
+    }
+    
+    .Subject{
+        padding: 10px;
+
+        width: 100%;
+        height: 20px;
+
+        outline: none;
+
+        border: 2px solid rgba(104, 164, 172, 0.568);
+        border-radius: 5px;
+        
+        font-family: 'Lato', 'Verdana', 'Tahoma', sans-serif;
+        font-size: 1rem;
+        color: rgba(255, 255, 255, 0.856); 
+
+        background-color: rgba(79, 127, 134, 0.603);
+
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.8);
+
+        transition: 0.3s ease;
+    }
+
+    .Subject::placeholder{
+        font-family: 'Lato','Verdana', 'Tahoma', sans-serif;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.589);
+    }
+    .Subject:focus {
+        border-color: #3f676d;
+        
+        box-shadow: 0 0 8px rgba(104, 164, 172, 0.7); 
+    }
+}
+
+.Submit {
+    display: flex; 
+
+    margin-top: 20px;
+    padding: 10px;
+    margin: 0 auto;
+    
+    width: 100%;
+
+    border-radius: 20px;
+
+    background-color: rgba(104, 164, 172, 0.712);
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+
+    input{
+        cursor: pointer;
+
+        margin: 0 auto;
+        padding: 10px;
+
+        width: 35%;
+
+        
+        border: 2px solid rgba(60, 94, 99, 0.568);
+        border-radius: 10px;
+
+        font-family: 'Montserrat', 'Arila', 'Helvetica', sans-serif;
+        text-transform: uppercase;
+        font-weight: bold;
+        color:rgba(255, 255, 255, 0.856);
+    
+        
+        background-color: rgba(79, 127, 134, 0.603);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+       
+        transition: 0.3s ease;
+    }
+
+    input:hover{
+        transform: scale(1.02);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+
+}
